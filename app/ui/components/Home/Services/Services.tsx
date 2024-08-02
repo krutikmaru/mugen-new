@@ -8,27 +8,27 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 function Services() {
   return (
-    <BlurFade inView delay={0.2} blur="60px">
-      <div className="p-10 flex flex-col justify-center items-center">
-        <div className="items-center justify-center">
-          <div
-            className={cn(
-              "group rounded-full border border-black/5 bg-neutral-200 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
-            )}
-          >
-            <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-              <span>🔥 Our Services</span>
-            </AnimatedShinyText>
-          </div>
+    // <BlurFade inView delay={0.2} blur="60px">
+    <div className="p-10 flex flex-col justify-center items-center">
+      <div className="items-center justify-center">
+        <div
+          className={cn(
+            "group rounded-full border border-black/5 bg-neutral-200 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+          )}
+        >
+          <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+            <span>🔥 Our Services</span>
+          </AnimatedShinyText>
         </div>
-        <p className="leading-7 [&:not(:first-child)]:mt-4 text-neutral-800 text-center px-5 md:px-40 dark:text-neutral-500 mb-20">
-          we offer a wide range of tailored solutions designed to enhance your
-          business operations. Explore our expertise in ERP implementation,
-          custom development, and more.
-        </p>
-        <ServicesBento />
       </div>
-    </BlurFade>
+      <p className="leading-7 [&:not(:first-child)]:mt-4 text-neutral-800 text-center px-5 md:px-40 dark:text-neutral-500 mb-20">
+        we offer a wide range of tailored solutions designed to enhance your
+        business operations. Explore our expertise in ERP implementation, custom
+        development, and more.
+      </p>
+      <ServicesBento />
+    </div>
+    // </BlurFade>
   );
 }
 
