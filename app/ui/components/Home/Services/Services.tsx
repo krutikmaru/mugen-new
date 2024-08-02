@@ -4,11 +4,9 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Brain, Server, Globe, Cloud, Bell } from "lucide-react";
 import { cn } from "@/app/lib/utils";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
-import BlurFade from "@/components/magicui/blur-fade";
 
 function Services() {
   return (
-    // <BlurFade inView delay={0.2} blur="60px">
     <div className="p-10 flex flex-col justify-center items-center">
       <div className="items-center justify-center">
         <div
@@ -28,7 +26,6 @@ function Services() {
       </p>
       <ServicesBento />
     </div>
-    // </BlurFade>
   );
 }
 

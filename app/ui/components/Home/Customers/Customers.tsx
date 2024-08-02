@@ -3,10 +3,8 @@ import React from "react";
 import { cn } from "@/app/lib/utils";
 import Marquee from "@/components/magicui/marquee";
 import { Container, Leaf, School, Ship } from "lucide-react";
-import BlurFade from "@/components/magicui/blur-fade";
 function Customers() {
   return (
-    // <BlurFade inView delay={0.2} blur="60px">
     <div className="py-44 w-full flex flex-col justify-center items-center">
       <div className="items-center justify-center">
         <div
@@ -60,7 +58,6 @@ function Customers() {
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-black"></div>
       </div>
     </div>
-    // </BlurFade>
   );
 }
 

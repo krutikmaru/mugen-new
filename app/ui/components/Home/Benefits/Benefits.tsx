@@ -12,13 +12,11 @@ import {
 } from "lucide-react";
 import { GridPattern } from "@/components/magicui/animated-grid-pattern";
 import { cn } from "@/app/lib/utils";
-import BlurFade from "@/components/magicui/blur-fade";
 import { Badge } from "@/components/ui/badge";
 
 function Benefits() {
   const { theme } = useTheme();
   return (
-    // <BlurFade inView delay={0.2} blur="60px">
     <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 md:space-x-5 px-0 md:px-40 py-20 relative">
       <GridPattern
         numSquares={30}
@@ -51,7 +49,6 @@ function Benefits() {
         })}
       </div>
     </div>
-    // </BlurFade>
   );
 }
 
