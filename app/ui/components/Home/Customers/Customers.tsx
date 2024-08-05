@@ -6,7 +6,7 @@ import { Container, Leaf, School, Ship } from "lucide-react";
 import Image from "next/image";
 function Customers() {
   return (
-    <div className="py-44 w-full flex flex-col justify-center items-center">
+    <div className=" w-full flex flex-col justify-center items-center">
       <div className="items-center justify-center">
         <div
           className={cn(
@@ -36,11 +36,8 @@ function Customers() {
                   src={customer.image}
                   alt={customer.name}
                   fill
-                  className="absolute w-full h-full object-contain"
+                  className="absolute w-full h-full object-contain grayscale"
                 />
-              </div>
-              <div className="text-sm text-neutral-800 dark:text-neutral-400  ">
-                {customer.name}
               </div>
             </div>
           ))}
