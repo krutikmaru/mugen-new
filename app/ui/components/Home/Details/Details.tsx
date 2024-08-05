@@ -24,9 +24,9 @@ function TitleParagraph() {
         initial={{ opacity: 0, y: 20 }}
         transition={{ delay: 0.2, duration: 0.4 }}
         animate={titleIsInView ? { opacity: 1, y: 0 } : {}}
-        className="scroll-m-20 w-80 text-4xl md:text-5xl font-semibold tracking-tight first:mt-0 text-black dark:text-white flex flex-col items-center lg:items-start  text-center lg:text-left "
+        className="scroll-m-20  text-4xl md:text-5xl font-semibold tracking-tight first:mt-0 text-black dark:text-white flex flex-col items-center lg:items-start  text-center lg:text-left "
       >
-        <span>A Modern</span> Business Management System
+        A Modern Business Management System
       </motion.div>
       <motion.p
         ref={paragraphRef}
