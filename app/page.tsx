@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="">
       <Landing />
-      <Details />
+      {/* <Details /> */}
       <Customers />
       <Services />
       <Benefits />
