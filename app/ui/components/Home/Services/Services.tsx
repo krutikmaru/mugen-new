@@ -1,9 +1,12 @@
 import React from "react";
 
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
-import { Brain, Server, Globe, Cloud, Bell } from "lucide-react";
+import Globe from "@/components/magicui/globe";
+import { Brain, Server, Globe as GlobeIcon, Cloud, Bell } from "lucide-react";
 import { cn } from "@/app/lib/utils";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
+import AnimatedBeamERP from "./AnimatedBeamERP";
+import OrbitingConsultation from "./OrbitingConsultation";
 
 function Services() {
   return (
@@ -49,35 +52,23 @@ const features = [
       "ERP implementation tailored to your business needs from Mugen.",
     href: "/",
     cta: "Learn more",
-    background: (
-      <div className="relative">
-        <img
-          className="absolute top-0 left-0 object-cover opacity-100 dark:opacity-60"
-          src="https://images.unsplash.com/photo-1554232456-8727aae0cfa4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="ERP"
-        />
-      </div>
-    ),
+    background: <AnimatedBeamERP />,
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
     Icon: Brain,
     name: "AI & ML",
-    description: "Kuch aata hai nai fir bhi daalenge",
+    description: "Esclate your process with our AI",
     href: "/",
     cta: "Learn more",
     background: (
-      <img
-        className="absolute top-0 left-0 object-cover opacity-100 dark:opacity-60"
-        src="https://images.unsplash.com/photo-1617722694908-9be1092d1bc2?q=80&w=1486&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Loli Lolll"
-      />
+      <Globe className="-bottom-20 -right-52 w-[400px] lg:w-[500px]" />
     ),
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
-    Icon: Globe,
-    name: "Web Development",
+    Icon: GlobeIcon,
+    name: "Web Applications",
     description: "We make the best website, look at ours only.",
     href: "/",
     cta: "Learn more",
@@ -111,13 +102,7 @@ const features = [
     description: "Know the direction where you need to go to.",
     href: "/",
     cta: "Learn more",
-    background: (
-      <img
-        className="absolute top-0 left-0 object-cover opacity-100 dark:opacity-60"
-        src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Loli Lolll"
-      />
-    ),
+    background: <OrbitingConsultation />,
 
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },

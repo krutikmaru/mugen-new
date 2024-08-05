@@ -29,7 +29,7 @@ function Customers() {
           {customers.map((customer) => (
             <div
               key={customer.name}
-              className="flex flex-col mr-10 justify-center items-center"
+              className="flex flex-col mr-16 justify-center items-center"
             >
               <div className="w-40 h-40 relative mb-4">
                 <Image

@@ -5,6 +5,7 @@ import Providers from "./lib/providers";
 import Navigation from "@/app/ui/components/Layout/Navigation";
 import Footer from "@/app/ui/components/Layout/Footer";
 import SpaceBackground from "./ui/components/SpaceBackground";
+import DockMugen from "./ui/components/Layout/DockMugen";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
       >
         <Providers>
           <SpaceBackground />
-          <Navigation />
+          <DockMugen />
           {children}
           <Footer />
         </Providers>
