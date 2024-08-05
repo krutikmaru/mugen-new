@@ -39,7 +39,7 @@ function Customers() {
                   className="absolute w-full h-full object-contain"
                 />
               </div>
-              <div className="text-sm text-neutral-400 dark:text-neutral-800  ">
+              <div className="text-sm text-neutral-800 dark:text-neutral-400  ">
                 {customer.name}
               </div>
             </div>
