@@ -40,13 +40,13 @@ function Landing() {
 function TitleParagraph() {
   return (
     <>
-      <div className="scroll-m-20 text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight lg:text-9xl text-black dark:text-neutral-700">
+      <div className="scroll-m-20 text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight lg:text-9xl text-black dark:text-white">
         <span>We Power</span>{" "}
         <span className="bg-gradient-to-br from-indigo-600 to-fuchsia-500 inline-block text-transparent bg-clip-text">
           SME
         </span>
       </div>
-      <p className="leading-7 [&:not(:first-child)]:mt-6 text-black text-lg dark:text-neutral-700 mb-4 text-center px-10 ">
+      <p className="leading-7 [&:not(:first-child)]:mt-6 text-black text-lg dark:text-white mb-4 text-center px-10 ">
         Designed to dramatically scale down costs, optimize processes, and
         simplify operations.
       </p>
