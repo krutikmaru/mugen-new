@@ -64,7 +64,7 @@ const DetailsGrid = () => {
   const { theme } = useTheme();
   return (
     <div className="w-full flex flex-col mt-5 p-5">
-      <div className="flex sm:grid sm:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-scroll scrollbar-hidden">
+      <div className="flex sm:grid pb-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-scroll scrollbar-hidden">
         {details.detailsStore.map((detail) => {
           if (currentItem.title === detail.title) {
             return (

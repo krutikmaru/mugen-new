@@ -2,7 +2,8 @@ import React from "react";
 
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import ThemeSwitcher from "../ThemeSwitcher";
-import { Wrench } from "lucide-react";
+import { Mail, Phone, Wrench } from "lucide-react";
+import Link from "next/link";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -15,6 +16,16 @@ export default function DockMugen() {
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
           <Wrench size={16} />
+        </DockIcon>
+        <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
+          <Link href="mailto:admin@mugen.ae">
+            <Mail size={16} />
+          </Link>
+        </DockIcon>
+        <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
+          <Link href="tel:+971585183003">
+            <Phone size={16} />
+          </Link>
         </DockIcon>
       </Dock>
     </div>
