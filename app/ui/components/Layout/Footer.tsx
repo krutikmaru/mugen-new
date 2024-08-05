@@ -19,7 +19,7 @@ function Footer() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full place-items-center py-24">
         <div className="w-full h-full flex flex-col space-y-2 justify-start items-center">
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col justify-center items-center md:items-start space-y-2">
             <h4 className="text-4xl font-bold text-neutral-500 dark:text-neutral-800 mb-2">
               Pages
             </h4>
@@ -32,7 +32,7 @@ function Footer() {
           </div>
         </div>
         <div className="w-full h-full flex flex-col space-y-2 justify-start items-center">
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 justify-center items-center md:items-start">
             <h4 className="text-4xl font-bold text-neutral-500 dark:text-neutral-800 mb-2">
               Contact
             </h4>
@@ -51,7 +51,7 @@ function Footer() {
           </div>
         </div>
         <div className="w-full h-full flex flex-col space-y-2 justify-start items-center">
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 justify-center items-center md:items-start">
             <h4 className="text-4xl font-bold text-neutral-500 dark:text-neutral-800 mb-2">
               Legal
             </h4>
@@ -70,7 +70,7 @@ function Footer() {
           </div>
         </div>
         <div className="w-full h-full flex flex-col space-y-2 justify-start items-center">
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 justify-center items-center md:items-start">
             <h4 className="text-4xl font-bold text-neutral-500 dark:text-neutral-800 mb-2">
               Socials
             </h4>

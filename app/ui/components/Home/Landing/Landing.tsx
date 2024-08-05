@@ -25,11 +25,11 @@ function Landing() {
 
   return (
     <main className="flex flex-col md:flex-row min-h-screen relative overflow-x-hidden items-center justify-between text-white ">
-      <Particles
+      {/* <Particles
         className="w-full h-full absolute pointer-events-none particles"
         color={theme === "dark" ? "#fff" : "#000"}
       />
-      <Meteors />
+      <Meteors /> */}
       <div className="w-full pt-28 md:pt-0 pl-0 md:pl-16 h-full flex flex-col justify-center items-center z-10 bg-fuchsia-00">
         <TitleParagraph />
         <ConnectDialog />

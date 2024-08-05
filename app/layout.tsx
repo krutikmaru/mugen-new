@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "./lib/providers";
 import Navigation from "@/app/ui/components/Layout/Navigation";
 import Footer from "@/app/ui/components/Layout/Footer";
+import SpaceBackground from "./ui/components/SpaceBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " bg-white dark:bg-black"}>
+      <body
+        className={
+          inter.className + " bg-white dark:bg-black max-w-[1900px] mx-auto"
+        }
+      >
         <Providers>
+          <SpaceBackground />
           <Navigation />
           {children}
           <Footer />

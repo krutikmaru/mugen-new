@@ -3,6 +3,7 @@ import React from "react";
 import { cn } from "@/app/lib/utils";
 import Marquee from "@/components/magicui/marquee";
 import { Container, Leaf, School, Ship } from "lucide-react";
+import Image from "next/image";
 function Customers() {
   return (
     <div className="py-44 w-full flex flex-col justify-center items-center">
@@ -25,34 +26,24 @@ function Customers() {
       </p>
       <div className="w-full relative">
         <Marquee className="w-full [--duration:20s] mt-5" pauseOnHover>
-          <div className="flex flex-col mr-10 justify-center items-center">
-            <Leaf
-              size={100}
-              className="text-neutral-500 dark:text-neutral-900 mb-2"
-            />
-            <div className="text-sm text-neutral-700">E-Green</div>
-          </div>
-          <div className="flex flex-col mr-10 justify-center items-center">
-            <School
-              size={100}
-              className="text-neutral-500 dark:text-neutral-900 mb-2"
-            />
-            <div className="text-sm text-neutral-700">UWBC</div>
-          </div>
-          <div className="flex flex-col mr-10 justify-center items-center">
-            <Ship
-              size={100}
-              className="text-neutral-500 dark:text-neutral-900 mb-2"
-            />
-            <div className="text-sm text-neutral-700">Ship Chandler</div>
-          </div>
-          <div className="flex flex-col mr-10 justify-center items-center">
-            <Container
-              size={100}
-              className="text-neutral-500 dark:text-neutral-900 mb-2"
-            />
-            <div className="text-sm text-neutral-700">Hebron</div>
-          </div>
+          {customers.map((customer) => (
+            <div
+              key={customer.name}
+              className="flex flex-col mr-10 justify-center items-center"
+            >
+              <div className="w-40 h-40 relative mb-4">
+                <Image
+                  src={customer.image}
+                  alt={customer.name}
+                  fill
+                  className="absolute w-full h-full object-contain"
+                />
+              </div>
+              <div className="text-sm text-neutral-400 dark:text-neutral-800  ">
+                {customer.name}
+              </div>
+            </div>
+          ))}
         </Marquee>
         <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-black"></div>
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-black"></div>
@@ -62,3 +53,21 @@ function Customers() {
 }
 
 export default Customers;
+
+const customers = [
+  {
+    name: "Department of Municipal Affairs sharjah",
+    image: "/clients/dma.png",
+  },
+  // { name: "Depart of Fisheries Sharjah", image: "" },
+  { name: "Al Dhaidh Municipality", image: "/clients/al-dhaidh.jpeg" },
+  { name: "Jogaram Group", image: "/clients/jogaram.webp" },
+  { name: "Timber Craft", image: "/clients/timber-craft.png" },
+  { name: "Arooha Travels", image: "/clients/arooha-travels.png" },
+  { name: "Hebron Group", image: "/clients/hebron.jpg" },
+  { name: "Egreen", image: "/clients/e-green.png" },
+  { name: "Fintrestle", image: "/clients/fintrestle.jpeg" },
+  { name: "Fujairah Holding", image: "/clients/fujairah.png" },
+  { name: "UWBC", image: "/clients/uwbc.jpg" },
+  { name: "UWBE", image: "/clients/uwe.png" },
+];
