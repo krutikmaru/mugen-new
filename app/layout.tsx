@@ -18,12 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Providers>
-        <body className={inter.className + " bg-white dark:bg-black"}>
+      <body className={inter.className + " bg-white dark:bg-black"}>
+        <Providers>
           <Navigation />
           {children}
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }

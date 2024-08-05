@@ -17,7 +17,7 @@ import { Badge } from "@/components/ui/badge";
 function Benefits() {
   const { theme } = useTheme();
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 md:space-x-5 px-0 md:px-40 py-20 relative">
+    <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 md:space-x-5 px-0 md:px-40 py-20 relative overflow-hidden">
       <GridPattern
         numSquares={30}
         maxOpacity={0.1}

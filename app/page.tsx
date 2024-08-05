@@ -6,7 +6,7 @@ import Benefits from "./ui/components/Home/Benefits/Benefits";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-screen">
+    <div className="">
       <Landing />
       <Details />
       <Customers />
