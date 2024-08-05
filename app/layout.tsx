@@ -28,6 +28,7 @@ export default function RootLayout({
       >
         <Providers>
           <SpaceBackground />
+          <Navigation />
           <DockMugen />
           {children}
           <Footer />

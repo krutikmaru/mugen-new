@@ -6,7 +6,7 @@ import { Container, Leaf, School, Ship } from "lucide-react";
 import Image from "next/image";
 function Customers() {
   return (
-    <div className=" w-full flex flex-col justify-center items-center">
+    <div className=" w-full flex flex-col justify-center items-center pb-32">
       <div className="items-center justify-center">
         <div
           className={cn(
