@@ -63,9 +63,8 @@ const DetailsGrid = () => {
   );
   const { theme } = useTheme();
   return (
-    <div className="w-full flex flex-col mt-5 py-5 px-5 sm:px-20">
-      {/* Tool Bar */}
-      <div className="flex pb-2  overflow-x-auto">
+    <div className="w-full flex flex-col mt-5 p-5">
+      <div className="grid pb-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 ">
         {details.detailsStore.map((detail) => {
           if (currentItem.title === detail.title) {
             return (
@@ -94,22 +93,18 @@ const DetailsGrid = () => {
           );
         })}
       </div>
-      <div className="w-full mt-5 flex flex-col space-y-4 items-center  justify-center">
-        <div className="w-full pb-2 flex justify-start overflow-auto xl:mr-4 mb-4 xl:mb-0 ">
+      <div className="w-full mt-5 flex flex-col xl:flex-row items-center xl:items-start justify-center">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-4 gap-4 place-items-center xl:mr-4 mb-4 xl:mb-0 ">
           {currentItem.mainContent.map((content) => {
             return (
               <div
                 key={content.title}
-                className="flex cursor-pointer flex-col border-[2px] border-[#2d2d2d3b] border-dashed p-2 rounded-md min-w-[112px] h-28 items-center justify-center"
+                className="flex cursor-pointer flex-col border-[2px] border-neutral-200 dark:border-neutral-900 p-2 rounded-md w-28 h-28 items-center justify-center"
                 style={{
                   background:
                     content.title === currentSubItem.title
                       ? "#a855f7"
                       : "transparent",
-                  border:
-                    content.title === currentSubItem.title
-                      ? "3px solid #9e37ff"
-                      : "0",
                 }}
                 onClick={() => setCurrentSubItem(content)}
               >
@@ -121,7 +116,7 @@ const DetailsGrid = () => {
             );
           })}
         </div>
-        <div className="flex flex-col w-full items-start justify-start  p-5 xl:px-10 border-[1px] rounded-md border-[#6161613b]">
+        <div className="flex flex-col w-full xl:w-1/2 items-start justify-start  p-5 xl:px-10 border-[1px] rounded-md border-[#6161613b] bg-white dark:bg-neutral-900">
           <h1 className="text-3xl font-medium bg-gradient-to-r from-indigo-600 to-fuchsia-500 text-transparent bg-clip-text mb-4">
             {currentSubItem.title}
           </h1>
@@ -138,20 +133,22 @@ const DetailsGrid = () => {
               );
             })}
           </div>
-          <p className="text-sm text-neutral-600 dark:text-[#b1b1b1]">
+          <p className="text-sm text-neutral-900 dark:text-[#b1b1b1]">
             {currentSubItem.overview}
           </p>
-          <div className="w-full flex flex-col mt-4 mx-auto xl:mx-0">
+          <div className="flex flex-col mt-4 mx-auto xl:mx-0">
             {currentSubItem.details.map((detail) => {
               return (
                 <div
                   key={detail.title}
-                  className="flex w-full items-center justify-start space-x-4 mb-5 pb-3 border-b-[1px] border-[#6161613b]"
+                  className="flex items-center justify-start space-x-4 mb-5 pb-3 border-b-[1px] border-[#6161613b]"
                 >
                   <detail.icon />
                   <div>
-                    <h1 className="text-purple-400 mb-1">{detail.title}</h1>
-                    <p className="text-xs text-neutral-600 dark:text-[#b1b1b1]">
+                    <h1 className="text-purple-400 mb-1 font-medium">
+                      {detail.title}
+                    </h1>
+                    <p className="text-sm text-neutral-900 dark:text-[#b1b1b1]">
                       {detail.description}
                     </p>
                   </div>
