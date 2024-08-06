@@ -40,14 +40,14 @@ const OverviewProjectCard = ({
   const [shouldAppear, setShouldAppear] = useState(false);
   const router = useRouter();
   const handleCardClick = () => {
-    setIsClicked(true);
-    setTimeout(() => {
-      setShouldAppear(true);
-      setTimeout(() => {
-        // navigate("/projects/krutik");
-        router.push(`/projects/${project.id}`);
-      }, 500);
-    }, 300);
+    // setIsClicked(true);
+    // setTimeout(() => {
+    //   setShouldAppear(true);
+    //   setTimeout(() => {
+    //     // navigate("/projects/krutik");
+    //   }, 500);
+    // }, 300);
+    router.push(`/projects/${project.id}`);
   };
 
   return (
@@ -76,14 +76,14 @@ const OverviewProjectCard = ({
             <p className="text-mugen-purple-dark mb-4">{project.overview}</p>
           </div>
           <div className="w-full text-mugen-purple-dark">
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-center justify-between mb-2">
               <div className="flex space-x-2 items-center">
                 <Factory />
                 <span>Industry</span>
               </div>
               <p className="font-semibold">{project.industry}</p>
             </div>
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-center justify-between ">
               <div className="flex space-x-2 items-center">
                 <Clock />
                 <span>Duration</span>
