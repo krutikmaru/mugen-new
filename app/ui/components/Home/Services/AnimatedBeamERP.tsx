@@ -4,6 +4,16 @@ import React, { forwardRef, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
+import Image from "next/image";
+import {
+  Activity,
+  BadgeDollarSign,
+  Brain,
+  BrainCircuit,
+  Container,
+  DatabaseZap,
+  Users,
+} from "lucide-react";
 
 const Circle = forwardRef<
   HTMLDivElement,
@@ -13,7 +23,7 @@ const Circle = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "z-10 flex size-12 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+        "relative z-10 flex size-12 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
         className
       )}
     >
@@ -39,29 +49,34 @@ export default function AnimatedBeamERP() {
       <div className="flex size-full flex-col max-w-lg p-10 items-stretch justify-between gap-10">
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div1Ref}>
-            <Icons.googleDrive />
+            <BadgeDollarSign />
           </Circle>
           <Circle ref={div5Ref}>
-            <Icons.googleDocs />
+            <Activity />
           </Circle>
         </div>
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div2Ref}>
-            <Icons.notion />
+            <BrainCircuit />
           </Circle>
           <Circle ref={div4Ref} className="size-16">
-            <Icons.openai />
+            <Image
+              src={"/mugen.png"}
+              alt={"Mugen Logo"}
+              fill
+              className="absolute w-full h-full object-contain"
+            />
           </Circle>
           <Circle ref={div6Ref}>
-            <Icons.zapier />
+            <DatabaseZap />
           </Circle>
         </div>
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div3Ref}>
-            <Icons.whatsapp />
+            <Users />
           </Circle>
           <Circle ref={div7Ref}>
-            <Icons.messenger />
+            <Container />
           </Circle>
         </div>
       </div>

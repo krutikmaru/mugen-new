@@ -7,6 +7,8 @@ import { cn } from "@/app/lib/utils";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import AnimatedBeamERP from "./AnimatedBeamERP";
 import OrbitingConsultation from "./OrbitingConsultation";
+import { IconCloudWebApplications } from "./IconCloudWebApplications";
+import { RippleCloud } from "./RippleCloud";
 
 function Services() {
   return (
@@ -72,13 +74,7 @@ const features = [
     description: "We make the best website, look at ours only.",
     href: "/",
     cta: "Learn more",
-    background: (
-      <img
-        className="absolute top-0 left-0 object-cover opacity-100 dark:opacity-60"
-        src="https://images.unsplash.com/photo-1678690832871-8b9993c76aa8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Loli Lolll"
-      />
-    ),
+    background: <IconCloudWebApplications />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
@@ -87,13 +83,7 @@ const features = [
     description: "Best cloud in the market bois, hmu!",
     href: "/",
     cta: "Learn more",
-    background: (
-      <img
-        className="absolute top-0 left-0 object-cover opacity-100 dark:opacity-60"
-        src="https://images.unsplash.com/photo-1667984390527-850f63192709?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Loli Lolll"
-      />
-    ),
+    background: <RippleCloud />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {

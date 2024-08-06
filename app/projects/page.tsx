@@ -68,10 +68,10 @@ const OverviewProjectCard = ({
             alt="background"
             className="w-full h-full object-cover absolute top-0 left-0"
           /> */}
-        <div className="relative z-10 h-full ">
+        <div className="relative z-10 h-full text-black dark:text-white">
           <div>
             <project.icon size={40} />
-            <h1 className="text-mugen-purple-dark text-5xl my-4 font-semibold flex flex-col items-start justify-start">
+            <h1 className="text-black dark:text-white text-5xl my-4 font-semibold flex flex-col items-start justify-start">
               {project.title}
             </h1>
             <p className="text-mugen-purple-dark mb-4">{project.overview}</p>
@@ -93,7 +93,7 @@ const OverviewProjectCard = ({
             </div>
           </div>
         </div>
-        <div className="relative z-10 flex items-center justify-end text-5xl text-mugen-purple-dark">
+        <div className="relative text-black dark:text-white z-10 flex items-center justify-end text-5xl">
           <ArrowRight />
         </div>
       </motion.div>

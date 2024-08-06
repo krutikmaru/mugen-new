@@ -104,9 +104,7 @@ const DetailsGrid = () => {
                   background:
                     content.title === currentSubItem.title
                       ? "#a855f7"
-                      : theme === "dark"
-                      ? "#141414"
-                      : "#e7e7e7",
+                      : "transparent",
                   border:
                     content.title === currentSubItem.title
                       ? "3px solid #9e37ff"
