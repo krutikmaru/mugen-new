@@ -19,7 +19,7 @@ const ThemeSwitcher = () => {
       }}
     >
       {theme === "dark" ? (
-        <Sun size={16} />
+        <Sun size={16} className="text-white" />
       ) : (
         <Moon className="text-black" size={16} />
       )}

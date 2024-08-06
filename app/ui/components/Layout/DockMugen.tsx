@@ -15,16 +15,16 @@ export default function DockMugen() {
           <ThemeSwitcher />
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Wrench size={16} />
+          <Wrench size={16} className="text-black dark:text-white" />
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
           <Link href="mailto:admin@mugen.ae">
-            <Mail size={16} />
+            <Mail size={16} className="text-black dark:text-white" />
           </Link>
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
           <Link href="tel:+971585183003">
-            <Phone size={16} />
+            <Phone size={16} className="text-black dark:text-white" />
           </Link>
         </DockIcon>
       </Dock>
