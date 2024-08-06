@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { projects, Project } from "../lib/data/projects";
+import { projects } from "../lib/data/projects";
 import { ArrowRight, Clock, Factory } from "lucide-react";
+import { Project } from "../lib/types/project";
 
 const Page = () => {
   return (

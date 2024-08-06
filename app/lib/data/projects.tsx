@@ -3,17 +3,17 @@ import {
   BriefcaseBusiness,
   File,
   ListCheck,
-  LucideIcon,
   School,
   Server,
   Ship,
   Wallet,
   Warehouse,
 } from "lucide-react";
+import { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
-    id: 1,
+    id: "business-center-operations",
     title: "Business Center Operations",
     icon: BriefcaseBusiness,
     industry: "Business Services",
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: "optimizing-educational-operations",
     title: "Optimizing Educational Operations",
     icon: School,
     industry: "Education",
@@ -236,7 +236,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: "shipchandler-quotation-management",
     title: "Shipchandler Quotation Management",
     icon: Ship,
     industry: "Marine Supplies",
@@ -331,7 +331,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: "optimizing-wholesale-distribution",
     title: "Optimizing Wholesale Distribution",
     icon: Box,
     industry: "Wholesale Distribution",
@@ -421,34 +421,3 @@ export const projects: Project[] = [
     ],
   },
 ];
-
-type Integration = {
-  title: string;
-  icon: LucideIcon;
-};
-
-type Difficulty = {
-  title: string;
-  progress: number;
-};
-
-type Content = {
-  type: string;
-  data: string;
-  tailwindCss?: string;
-};
-
-export type Project = {
-  id: number;
-  title: string;
-  icon: LucideIcon;
-  industry: string;
-  duration: string;
-  overview: string;
-  name: string;
-  sector: string[];
-  integrations: Integration[];
-  difficulty: Difficulty;
-  timeline: number;
-  content: Content[];
-};

@@ -6,3 +6,22 @@ html,
 body {
   overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+  @apply h-1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-neutral-200 dark:bg-neutral-900;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-400 dark:bg-neutral-700 rounded-md;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neutral-500 dark:bg-neutral-600;
+}
