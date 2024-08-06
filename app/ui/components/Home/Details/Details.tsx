@@ -63,14 +63,15 @@ const DetailsGrid = () => {
   );
   const { theme } = useTheme();
   return (
-    <div className="w-full flex flex-col mt-5 p-5">
-      <div className="flex sm:grid pb-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-scroll scrollbar-hidden">
+    <div className="w-full flex flex-col mt-5 py-5 px-5 sm:px-20">
+      {/* Tool Bar */}
+      <div className="flex pb-2  overflow-x-auto">
         {details.detailsStore.map((detail) => {
           if (currentItem.title === detail.title) {
             return (
               <div
                 key={detail.id}
-                className="cursor-pointer border-[1px] border-[#6161613b] bg-purple-500 rounded-md py-3 px-5  min-w-[160px] flex mr-1 sm:mr-4 items-center justify-center"
+                className="cursor-pointer border-[1px] border-[#6161613b] bg-purple-500 rounded-md py-3 px-5 w-full min-w-[160px] flex mr-1 sm:mr-4 items-center justify-center"
               >
                 <detail.icon />
                 <span className="ml-2">{detail.title}</span>
@@ -84,7 +85,7 @@ const DetailsGrid = () => {
                 setCurrentItem(detail);
                 setCurrentSubItem(detail.mainContent[0]);
               }}
-              className="cursor-pointer border-[1px] text-black dark:text-white border-[#6161613b] bg-[#e7e7e7] dark:bg-neutral-900 rounded-md py-3 px-5  min-w-[160px] flex mr-4 items-center justify-center"
+              className="cursor-pointer border-[1px] text-black dark:text-white border-[#6161613b] bg-[#e7e7e7] dark:bg-neutral-900 rounded-md py-3 px-5 w-full min-w-[160px] flex mr-4 items-center justify-center"
             >
               <detail.icon />
 
@@ -93,13 +94,13 @@ const DetailsGrid = () => {
           );
         })}
       </div>
-      <div className="w-full mt-5 flex flex-col xl:flex-row items-center xl:items-start justify-center">
-        <div className=" grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-4 gap-4 xl:mr-4 mb-4 xl:mb-0 ">
+      <div className="w-full mt-5 flex flex-col space-y-4 items-center  justify-center">
+        <div className="w-full pb-2 flex justify-start overflow-auto xl:mr-4 mb-4 xl:mb-0 ">
           {currentItem.mainContent.map((content) => {
             return (
               <div
                 key={content.title}
-                className="flex cursor-pointer flex-col border-[2px] border-[#2d2d2d3b] border-dashed p-2 rounded-md w-28 h-28 items-center justify-center"
+                className="flex cursor-pointer flex-col border-[2px] border-[#2d2d2d3b] border-dashed p-2 rounded-md min-w-[112px] h-28 items-center justify-center"
                 style={{
                   background:
                     content.title === currentSubItem.title
@@ -120,7 +121,7 @@ const DetailsGrid = () => {
             );
           })}
         </div>
-        <div className="flex flex-col w-full xl:w-1/2 items-start justify-start  p-5 xl:px-10 border-[1px] rounded-md border-[#6161613b]">
+        <div className="flex flex-col w-full items-start justify-start  p-5 xl:px-10 border-[1px] rounded-md border-[#6161613b]">
           <h1 className="text-3xl font-medium bg-gradient-to-r from-indigo-600 to-fuchsia-500 text-transparent bg-clip-text mb-4">
             {currentSubItem.title}
           </h1>
@@ -140,12 +141,12 @@ const DetailsGrid = () => {
           <p className="text-sm text-neutral-600 dark:text-[#b1b1b1]">
             {currentSubItem.overview}
           </p>
-          <div className="flex flex-col mt-4 mx-auto xl:mx-0">
+          <div className="w-full flex flex-col mt-4 mx-auto xl:mx-0">
             {currentSubItem.details.map((detail) => {
               return (
                 <div
                   key={detail.title}
-                  className="flex items-center justify-start space-x-4 mb-5 pb-3 border-b-[1px] border-[#6161613b]"
+                  className="flex w-full items-center justify-start space-x-4 mb-5 pb-3 border-b-[1px] border-[#6161613b]"
                 >
                   <detail.icon />
                   <div>
