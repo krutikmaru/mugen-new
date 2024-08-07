@@ -1,8 +1,9 @@
+import { Service } from "@/app/lib/types/service";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export default function ActionArea({ service }) {
+export default function ActionArea({ service }: { service: Service }) {
   return (
     <div className="h-full w-full lg:w-[25%] flex flex-col space-y-2">
       <div className="w-full lg:w-full lg:h-1/2 px-6 py-10 border-[1px] border-neutral-400 dark:border-neutral-800 bg-neutral-200 dark:bg-neutral-900 rounded-md flex justify-center items-center">
