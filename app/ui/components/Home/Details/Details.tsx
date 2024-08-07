@@ -12,6 +12,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { CardSpotlight } from "@/components/ui/card-spotlight";
+import { cn } from "@/app/lib/utils";
 
 function Details() {
   return (
@@ -56,6 +58,18 @@ function TitleParagraph() {
 
 export default Details;
 
+import {
+  IconAdjustmentsBolt,
+  IconCloud,
+  IconCurrencyDollar,
+  IconEaseInOut,
+  IconHeart,
+  IconHelp,
+  IconRouteAltLeft,
+  IconTerminal2,
+} from "@tabler/icons-react";
+import { LucideIcon } from "lucide-react";
+
 const DetailsGrid = () => {
   const [currentItem, setCurrentItem] = useState(details.detailsStore[0]);
   const [currentSubItem, setCurrentSubItem] = useState(
@@ -94,28 +108,18 @@ const DetailsGrid = () => {
         })}
       </div>
       <div className="w-full mt-5 flex flex-col xl:flex-row items-center xl:items-start justify-center">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-4 gap-4 place-items-center xl:mr-4 mb-4 xl:mb-0 ">
-          {currentItem.mainContent.map((content) => {
-            return (
-              <div
-                key={content.title}
-                className="flex cursor-pointer flex-col border-[2px] border-neutral-200 dark:border-neutral-900 p-2 rounded-md w-28 h-28 items-center justify-center"
-                style={{
-                  background:
-                    content.title === currentSubItem.title
-                      ? "#a855f7"
-                      : "transparent",
-                }}
-                onClick={() => setCurrentSubItem(content)}
-              >
-                <content.icon className="text-black dark:text-white" />
-                <span className="text-center font-medium text-[10px] mt-2 text-black dark:text-white">
-                  {content.title}
-                </span>
-              </div>
-            );
-          })}
+        <div className="grid grid-cols-2 lg:grid-cols-4  relative z-10  mx-auto">
+          {currentItem.mainContent.map((feature, index) => (
+            <Feature
+              key={feature.title}
+              title={feature.title}
+              Icon={feature.icon}
+              onClick={() => setCurrentSubItem(feature)}
+              index={index}
+            />
+          ))}
         </div>
+
         <div className="flex flex-col w-full xl:w-1/2 items-start justify-start  p-5 xl:px-10 border-[1px] rounded-md border-[#6161613b] bg-white dark:bg-neutral-900">
           <h1 className="text-3xl font-medium bg-gradient-to-r from-indigo-600 to-fuchsia-500 text-transparent bg-clip-text mb-4">
             {currentSubItem.title}
@@ -157,6 +161,46 @@ const DetailsGrid = () => {
             })}
           </div>
         </div>
+      </div>
+    </div>
+  );
+};
+
+const Feature = ({
+  title,
+  Icon,
+  onClick,
+  index,
+}: {
+  title: string;
+  Icon: LucideIcon;
+  onClick: () => void;
+  index: number;
+}) => {
+  return (
+    <div
+      onClick={onClick}
+      className={cn(
+        "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800 cursor-pointer",
+        (index === 0 || index === 4 || index === 8 || index === 12) &&
+          "lg:border-l dark:border-neutral-800",
+        index < 12 && "lg:border-b dark:border-neutral-800"
+      )}
+    >
+      {index < 4 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+      )}
+      {index >= 4 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+      )}
+      <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
+        <Icon />
+      </div>
+      <div className="text-sm font-bold mb-2 relative z-10 px-10">
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+          {title}
+        </span>
       </div>
     </div>
   );
