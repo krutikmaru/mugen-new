@@ -1,9 +1,12 @@
+import { Handshake } from "lucide-react";
 import { Service } from "../types/service";
 
 export const services: Service[] = [
   {
     id: "IT-Consulting",
     title: "IT Consulting",
+    Icon: Handshake,
+    description: "Get the best personalized IT consulting from Mugen",
     slides: [
       {
         title: "What is it?",
@@ -29,6 +32,9 @@ export const services: Service[] = [
   {
     id: "Business-Success-Software",
     title: "Business Success Software",
+    Icon: Handshake,
+    description:
+      "Get the best personalized Business Success Software from Mugen",
     slides: [
       {
         title: "What is it?",
@@ -55,6 +61,8 @@ export const services: Service[] = [
   {
     id: "Cloud-and-DevOps",
     title: "Cloud & Dev Ops",
+    Icon: Handshake,
+    description: "Get the best personalized Cloud & DevOps from Mugen",
     slides: [
       {
         title: "What is it?",
@@ -80,6 +88,8 @@ export const services: Service[] = [
   {
     id: "AI-and-ML",
     title: "AI & ML",
+    Icon: Handshake,
+    description: "Get the best personalized AI ML from Mugen",
     slides: [
       {
         title: "What is it?",

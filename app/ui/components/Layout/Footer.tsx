@@ -7,10 +7,10 @@ function Footer() {
     <div className="pt-12 border-t-[1px] border-black dark:border-neutral-800">
       <div className="w-full relative">
         <Marquee className="w-full [--duration:20s] mt-5">
-          <h3 className="scroll-m-20 mr-20 pb-2 text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight lg:text-9xl text-black dark:text-neutral-900">
+          <h3 className="scroll-m-20 mr-20 pb-2 font-extrabold tracking-tight text-9xl text-black dark:text-neutral-900">
             Mugen
           </h3>
-          <h3 className="scroll-m-20 mr-20 text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight lg:text-9xl text-black dark:text-neutral-900">
+          <h3 className="scroll-m-20 mr-20 font-extrabold tracking-tight text-9xl text-black dark:text-neutral-900">
             *
           </h3>
         </Marquee>

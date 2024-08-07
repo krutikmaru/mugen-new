@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import Link from "next/link";
 import ThemeSwitcher from "@/app/ui/components/ThemeSwitcher";
+import Image from "next/image";
 
 const NavigationScroll = () => {
   return (
@@ -17,9 +18,16 @@ const NavigationScroll = () => {
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.2 }}
-          className="mr-10 text-purple-400"
+          className="mr-7 w-6 h-6 relative"
         >
-          <Link href="/">M</Link>
+          <Link href="/" className=" ">
+            <Image
+              src={"/mugen.png"}
+              alt={"Mugen Logo"}
+              fill
+              className="absolute w-full h-full object-contain"
+            />
+          </Link>
         </motion.div>
         <Link
           href="/projects"
@@ -27,7 +35,12 @@ const NavigationScroll = () => {
         >
           Projects
         </Link>
-        <ThemeSwitcher />
+        <Link
+          href="/services"
+          className=" cursor-pointer hover:text-purple-400 transition-all duration-300 ease-in-out"
+        >
+          Services
+        </Link>
       </motion.div>
     </>
   );
