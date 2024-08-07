@@ -14,7 +14,7 @@ import {
 export function BenefitsBentoGrid() {
   return (
     <div className="flex flex-col items-center justify-center py-12">
-      <div className="scroll-m-20 text-4xl md:text-5xl font-semibold tracking-tight first:mt-0 text-black dark:text-white flex space-x-2  items-center lg:items-start  text-center lg:text-left mb-4">
+      <div className="scroll-m-20 text-4xl md:text-5xl font-semibold tracking-tight first:mt-0 text-black dark:text-white flex space-x-2 flex-col md:flex-row items-center lg:items-start  text-center lg:text-left mb-4">
         <span className="bg-gradient-to-br from-indigo-600 to-fuchsia-500 inline-block text-transparent bg-clip-text">
           Benefits
         </span>{" "}

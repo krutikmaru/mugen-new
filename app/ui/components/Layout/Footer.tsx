@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="pt-12 border-t-[1px] border-black dark:border-neutral-800">
+    <div className="pt-12 border-t-[1px] bg-white/20 dark:bg-black/20 backdrop-blur-2xl border-black dark:border-neutral-800">
       <div className="w-full relative">
         <Marquee className="w-full [--duration:20s] mt-5">
           <h3 className="scroll-m-20 mr-20 pb-2 font-extrabold tracking-tight text-9xl text-black dark:text-neutral-900">
@@ -28,6 +28,18 @@ function Footer() {
               className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
             >
               Projects
+            </Link>
+            <Link
+              href="/services"
+              className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
+            >
+              Services
+            </Link>
+            <Link
+              href="/contact"
+              className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
+            >
+              Contact
             </Link>
           </div>
         </div>
@@ -56,13 +68,13 @@ function Footer() {
               Legal
             </h4>
             <Link
-              href="/projects"
+              href="/terms-and-conditions"
               className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
             >
               Terms & Conditions
             </Link>
             <Link
-              href="/projects"
+              href="/privacy-policy"
               className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
             >
               Privacy Policy
@@ -75,19 +87,19 @@ function Footer() {
               Socials
             </h4>
             <Link
-              href="/projects"
+              href="https://www.linkedin.com/"
               className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
             >
               LinkedIn
             </Link>
             <Link
-              href="/projects"
+              href="https://x.com/"
               className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
             >
               Twitter
             </Link>
             <Link
-              href="/projects"
+              href="https://instagram.com/"
               className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
             >
               Instagram

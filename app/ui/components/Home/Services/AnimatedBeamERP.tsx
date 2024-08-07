@@ -50,7 +50,6 @@ export default function AnimatedBeamERP() {
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div1Ref}>
             <BadgeDollarSign />
-            <p>Purchase</p>
           </Circle>
           <Circle ref={div5Ref}>
             <Activity />

@@ -16,6 +16,9 @@ const NavigationLinks = () => {
       <motion.div className=" cursor-pointer hover:text-purple-700 text-black dark:text-white transition-all duration-300 ease-in-out">
         <Link href="/services">Services</Link>
       </motion.div>
+      <motion.div className=" cursor-pointer hover:text-purple-700 text-black dark:text-white transition-all duration-300 ease-in-out">
+        <Link href="/contact">Contact</Link>
+      </motion.div>
     </motion.div>
   );
 };

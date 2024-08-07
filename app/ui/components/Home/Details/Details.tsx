@@ -107,7 +107,7 @@ const DetailsGrid = () => {
           );
         })}
       </div>
-      <div className="w-full mt-5 flex flex-col xl:flex-row items-center xl:items-start justify-center">
+      <div className="w-full mt-5 flex flex-col space-x-0 xl:space-x-4 xl:flex-row items-center xl:items-start justify-center">
         <div className="grid grid-cols-2 lg:grid-cols-4  relative z-10  mx-auto">
           {currentItem.mainContent.map((feature, index) => (
             <Feature
@@ -120,7 +120,7 @@ const DetailsGrid = () => {
           ))}
         </div>
 
-        <div className="flex flex-col w-full xl:w-1/2 items-start justify-start  p-5 xl:px-10 border-[1px] rounded-md border-[#6161613b] bg-white dark:bg-neutral-900">
+        <div className="flex flex-col w-full xl:w-1/2 items-start justify-start  p-5 xl:px-10 border-[1px] rounded-md border-[#6161613b] bg-white bg-white/20 dark:bg-black/20 backdrop-blur-2xl">
           <h1 className="text-3xl font-medium bg-gradient-to-r from-indigo-600 to-fuchsia-500 text-transparent bg-clip-text mb-4">
             {currentSubItem.title}
           </h1>

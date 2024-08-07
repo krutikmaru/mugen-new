@@ -14,9 +14,7 @@ export default function DockMugen() {
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
           <ThemeSwitcher />
         </DockIcon>
-        <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Wrench size={16} className="text-black dark:text-white" />
-        </DockIcon>
+
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
           <Link href="mailto:admin@mugen.ae">
             <Mail size={16} className="text-black dark:text-white" />
