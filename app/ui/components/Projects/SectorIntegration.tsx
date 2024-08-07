@@ -24,7 +24,7 @@ export default function SectorIntegrations({ project }: { project: Project }) {
         <h1 className="ml-2 mb-3 mt-6 text-xl text-black dark:text-white">
           Integrations
         </h1>
-        <div className="w-full flex justify-start items-center overflow-x-scroll pb-4">
+        <div className="w-full flex justify-start items-center overflow-x-scroll scrollbar-hidden pb-4">
           {project.integrations.map((integration) => {
             return (
               <div

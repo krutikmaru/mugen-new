@@ -12,7 +12,7 @@ export default function Home() {
       <Customers />
       <Services />
       <Details />
-      <Benefits />
+      {/* <Benefits /> */}
       <BenefitsBentoGrid />
     </div>
   );

@@ -17,9 +17,11 @@ export default function TimelineDifficulty({ project }: { project: Project }) {
   return (
     <div className="h-auto w-full flex flex-col justify-start items-center">
       <div className="w-full h-auto mt-4 p-10  bg-[#fff] dark:bg-black  backdrop-blur-md border-2 border-[#dedede] dark:border-[#292929] rounded-md overflow-hidden flex justify-center items-center flex-col">
-        <div className="w-44 h-44 bg-gradient-to-br flex justify-center items-center text-7xl font-semibold  from-violet-500 to-fuchsia-500 rounded-md">
-          {project.timeline}
+        <div className="w-44 h-44 bg-gradient-to-br flex flex-col text-white justify-center items-center  font-semibold  from-violet-500 to-fuchsia-500 rounded-md">
+          <h3 className="text-7xl">{project.timeline}</h3>
+          <p>Months</p>
         </div>
+
         <span className="text-4xl mt-3 text-black dark:text-white">
           Timeline
         </span>

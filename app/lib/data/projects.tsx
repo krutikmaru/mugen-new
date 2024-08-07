@@ -38,7 +38,7 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "Challenges",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "p",
@@ -49,12 +49,12 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "Solutions Provided",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "h2",
         data: "1. Software Implementation for Business Operations:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "2. HRMS System Implementation:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -96,7 +96,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "3. Lead Management System for Sales Team:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "Client Testimonial:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "p",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "Challenges",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "p",
@@ -161,12 +161,12 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "Solutions Provided",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "h2",
         data: "Comprehensive Student Data Management:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "p",
@@ -176,7 +176,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "Timetable Organization:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "p",
@@ -187,7 +187,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "Lead Follow-up System:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "p",
@@ -197,7 +197,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "Attendance Management and Parent Communication:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -217,7 +217,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "Outcome:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "p",
@@ -227,7 +227,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "Client Testimonial:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "p",
@@ -261,7 +261,7 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "Challenges",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "p",
@@ -271,12 +271,12 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "Solutions Provided",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "h2",
         data: "1. Automated Quotation Management:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -291,7 +291,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "2. Quotation Awarding System:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -306,7 +306,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "3. Customized Features:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -321,7 +321,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "Outcome:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "p",
@@ -356,7 +356,7 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "About the Client",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "p",
@@ -366,7 +366,7 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "Challenges",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "p",
@@ -376,12 +376,12 @@ export const projects: Project[] = [
       {
         type: "h1",
         data: "Solutions Provided",
-        tailwindCss: "mb-2 text-5xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-3xl font-medium text-black dark:text-white",
       },
       {
         type: "h2",
         data: "1. Custom Dashboard Implementation:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -396,7 +396,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "2. System Customization:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "li",
@@ -411,7 +411,7 @@ export const projects: Project[] = [
       {
         type: "h2",
         data: "Outcome:",
-        tailwindCss: "mb-2 text-2xl text-black dark:text-white",
+        tailwindCss: "mb-2 text-xl text-black dark:text-white",
       },
       {
         type: "p",

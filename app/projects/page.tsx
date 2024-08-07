@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { projects } from "../lib/data/projects";
 import { ArrowRight, Clock, Factory } from "lucide-react";
 import { Project } from "../lib/types/project";
+import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 const Page = () => {
   return (
@@ -41,37 +42,19 @@ const OverviewProjectCard = ({
   const [shouldAppear, setShouldAppear] = useState(false);
   const router = useRouter();
   const handleCardClick = () => {
-    // setIsClicked(true);
-    // setTimeout(() => {
-    //   setShouldAppear(true);
-    //   setTimeout(() => {
-    //     // navigate("/projects/krutik");
-    //   }, 500);
-    // }, 300);
     router.push(`/projects/${project.id}`);
   };
 
   return (
     <>
-      <motion.div
-        className="h-[500px] min-w-full bg-neutral-300 dark:bg-neutral-900 md:min-w-[300px] flex flex-col rounded-md overflow-hidden lg:mb-0 relative p-7 cursor-pointer "
-        animate={{
-          scale: isClicked ? 100 : 1,
-          zIndex: isClicked ? 10 : 1,
-          rotate: isClicked ? "-30deg" : "0deg",
-        }}
-        transition={{ duration: 3.5 }}
+      <CardSpotlight
+        className="h-[500px] min-w-full md:min-w-[300px] bg-neutral-800 flex flex-col lg:mb-0 relative p-7 cursor-pointer "
         onClick={handleCardClick}
       >
-        {/* <img
-            src="/assets/images/gradients/gradient_background_1.jpg"
-            alt="background"
-            className="w-full h-full object-cover absolute top-0 left-0"
-          /> */}
-        <div className="relative z-10 h-full text-black dark:text-white">
+        <div className="relative z-10 h-full text-white">
           <div>
             <project.icon size={40} />
-            <h1 className="text-black dark:text-white text-5xl my-4 font-semibold flex flex-col items-start justify-start">
+            <h1 className="text-white text-5xl my-4 font-semibold flex flex-col items-start justify-start">
               {project.title}
             </h1>
             <p className="text-mugen-purple-dark mb-4">{project.overview}</p>
@@ -93,18 +76,10 @@ const OverviewProjectCard = ({
             </div>
           </div>
         </div>
-        <div className="relative text-black dark:text-white z-10 flex items-center justify-end text-5xl">
+        <div className="relative text-white z-10 flex items-center justify-end text-5xl">
           <ArrowRight />
         </div>
-      </motion.div>
-      <motion.div
-        animate={{
-          opacity: shouldAppear ? 1 : 0,
-          display: shouldAppear ? "block" : "none",
-        }}
-        transition={{ duration: 0.5 }}
-        className="fixed top-0 left-0 w-full h-screen bg-mugen-purple-dark z-[1000]"
-      ></motion.div>
+      </CardSpotlight>
     </>
   );
 };

@@ -1,4 +1,9 @@
-import { Handshake } from "lucide-react";
+import {
+  BrainCircuit,
+  BriefcaseBusiness,
+  Cloud,
+  Handshake,
+} from "lucide-react";
 import { Service } from "../types/service";
 
 export const services: Service[] = [
@@ -6,7 +11,7 @@ export const services: Service[] = [
     id: "IT-Consulting",
     title: "IT Consulting",
     Icon: Handshake,
-    description: "Get the best personalized IT consulting from Mugen",
+    description: "Expert IT consulting for strategic business growth.",
     slides: [
       {
         title: "What is it?",
@@ -17,7 +22,7 @@ export const services: Service[] = [
       {
         title: "Benefits",
         description:
-          "Engaging with our IT Consulting services offers numerous advantages. We help you reduce costs through optimized IT processes, improve data security and compliance, and leverage cutting-edge technologies to stay competitive. Our tailored solutions ensure that your IT infrastructure supports your business objectives and adapts to future challenges.",
+          "Custom software solutions designed to enhance business efficiency.",
         nextSlide: null,
       },
     ],
@@ -32,9 +37,9 @@ export const services: Service[] = [
   {
     id: "Business-Success-Software",
     title: "Business Success Software",
-    Icon: Handshake,
+    Icon: BriefcaseBusiness,
     description:
-      "Get the best personalized Business Success Software from Mugen",
+      "Comprehensive Cloud and DevOps solutions for scalable and secure operations.",
     slides: [
       {
         title: "What is it?",
@@ -61,8 +66,9 @@ export const services: Service[] = [
   {
     id: "Cloud-and-DevOps",
     title: "Cloud & Dev Ops",
-    Icon: Handshake,
-    description: "Get the best personalized Cloud & DevOps from Mugen",
+    Icon: Cloud,
+    description:
+      "Advanced AI and ML services to transform data into actionable insights.",
     slides: [
       {
         title: "What is it?",
@@ -88,7 +94,7 @@ export const services: Service[] = [
   {
     id: "AI-and-ML",
     title: "AI & ML",
-    Icon: Handshake,
+    Icon: BrainCircuit,
     description: "Get the best personalized AI ML from Mugen",
     slides: [
       {

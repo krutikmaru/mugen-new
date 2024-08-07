@@ -25,3 +25,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-neutral-500 dark:bg-neutral-600;
 }
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
