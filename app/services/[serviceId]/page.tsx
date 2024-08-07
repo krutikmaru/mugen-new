@@ -4,7 +4,10 @@ import ContentArea from "@/app/ui/components/services/ContentArea";
 import VisualArea from "@/app/ui/components/services/VisualArea";
 import ActionArea from "@/app/ui/components/services/ActionArea";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useState } from "react";
+import { Service, Slide } from "@/app/lib/types/service";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 function Page({ params }: { params: { serviceId: string } }) {
   const router = useRouter();
@@ -15,9 +18,9 @@ function Page({ params }: { params: { serviceId: string } }) {
   }
 
   return (
-    <div className="p-10 pt-24 font-inter bg-white dark:bg-black w-screen flex flex-col lg:flex-row justify-start lg:justify-center items-center space-y-10 lg:space-y-0 space-x-0 lg:space-x-2">
+    <div className="p-5 sm:p-10 pt-24 mt-0 sm:mt-24 bg-white dark:bg-black w-screen h-full lg:h-screen flex flex-col lg:flex-row justify-start lg:justify-center items-start space-y-10 lg:space-y-0 space-x-0 lg:space-x-2">
       <ContentArea service={service} />
-      {/* <VisualArea service={service} /> */}
+      <VisualArea service={service} />
       <ActionArea service={service} />
     </div>
   );
