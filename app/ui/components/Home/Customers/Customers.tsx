@@ -53,17 +53,21 @@ export default Customers;
 
 const customers = [
   {
-    name: "Department of Municipal Affairs sharjah",
+    name: "Department of Municipal Affairs Sharjah",
     image: "/clients/dma.png",
+  },
+  {
+    name: "Sharjah Fish Resource Authority",
+    image: "/clients/fra.png",
   },
   // { name: "Depart of Fisheries Sharjah", image: "" },
   { name: "Al Dhaidh Municipality", image: "/clients/al-dhaidh.jpeg" },
   { name: "Jogaram Group", image: "/clients/jogaram.webp" },
-  { name: "Timber Craft", image: "/clients/timber-craft.png" },
+  { name: "Timber Craft", image: "/clients/timber-craft.svg" },
   { name: "Arooha Travels", image: "/clients/arooha-travels.png" },
   { name: "Hebron Group", image: "/clients/hebron.jpg" },
   { name: "Egreen", image: "/clients/e-green.png" },
-  { name: "Fintrestle", image: "/clients/fintrestle.jpeg" },
+  // { name: "Fintrestle", image: "/clients/fintrestle.jpeg" },
   { name: "Fujairah Holding", image: "/clients/fujairah.png" },
   { name: "UWBC", image: "/clients/uwbc.jpg" },
   { name: "UWBE", image: "/clients/uwe.png" },

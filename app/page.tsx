@@ -4,6 +4,7 @@ import Customers from "@/app/ui/components/Home/Customers/Customers";
 import Services from "@/app/ui/components/Home/Services/Services";
 import Benefits from "./ui/components/Home/Benefits/Benefits";
 import { BenefitsBentoGrid } from "./ui/components/Home/Test";
+import { GlobeDemo } from "./ui/components/Home/Globe";
 
 export default function Home() {
   return (

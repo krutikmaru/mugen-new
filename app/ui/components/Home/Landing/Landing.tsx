@@ -19,24 +19,21 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import Meteors from "@/components/magicui/meteors";
 import Globe from "@/components/magicui/globe";
+import { GlobeDemo } from "../Globe";
 
 function Landing() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <main className="flex flex-col md:flex-row min-h-screen relative overflow-x-hidden items-center justify-between text-white ">
-      {/* <Particles
-        className="w-full h-full absolute pointer-events-none particles"
-        color={theme === "dark" ? "#fff" : "#000"}
-      />
-      <Meteors /> */}
-      <div className="w-full pt-28 md:pt-0 pl-0 md:pl-16 h-full flex flex-col justify-center items-center z-10 bg-fuchsia-00">
+    <main className="flex flex-col lg:flex-row min-h-screen relative overflow-x-hidden items-center justify-between text-white ">
+      <div className="w-full pt-28 lg:pt-0 pl-0 lg:pl-16 h-full flex flex-col justify-center items-center z-10 bg-fuchsia-00">
         <TitleParagraph />
         <ConnectDialog />
       </div>
       <div className="w-full h-full bg-blue-00">
         <div className="relative flex min-h-[70vh] md:min-h-screen w-full items-center justify-center overflow-hidden ">
-          <Globe className="top-1/2 -translate-y-1/2 w-[400px] lg:w-[500px]" />
+          {/* <Globe className="top-1/2 -translate-y-1/2 w-[400px] lg:w-[500px]" /> */}
+          <GlobeDemo />
           {/* <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" /> */}
         </div>
       </div>
