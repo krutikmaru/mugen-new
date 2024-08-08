@@ -77,7 +77,7 @@ const DetailsGrid = () => {
   );
   const { theme } = useTheme();
   return (
-    <div className="w-full flex flex-col mt-5 p-5">
+    <div className="w-full flex flex-col mt-5 p-5 sm:p-20">
       <div className="grid pb-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 ">
         {details.detailsStore.map((detail) => {
           if (currentItem.title === detail.title) {

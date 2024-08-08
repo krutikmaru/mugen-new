@@ -4,6 +4,7 @@ import { Dock, DockIcon } from "@/components/magicui/dock";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { Mail, Phone, Wrench } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -11,6 +12,16 @@ export default function DockMugen() {
   return (
     <div className="fixed left-1/2 -translate-x-1/2 bottom-4 z-[1000]">
       <Dock magnification={60} distance={100}>
+        <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
+          <Link href="/" className="w-4 h-4 relative">
+            <Image
+              src={"/mugen.png"}
+              alt={"Mugen Logo"}
+              fill
+              className="absolute w-full h-full object-contain"
+            />
+          </Link>
+        </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
           <ThemeSwitcher />
         </DockIcon>

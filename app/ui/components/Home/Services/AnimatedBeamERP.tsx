@@ -46,7 +46,7 @@ export default function AnimatedBeamERP() {
 
   return (
     <div ref={containerRef}>
-      <div className="flex size-full flex-col max-w-lg p-10 items-stretch justify-between gap-10">
+      <div className="flex size-full flex-col max-w-lg p-10 items-stretch justify-between gap-10 absolute md:relative">
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div1Ref}>
             <BadgeDollarSign />
