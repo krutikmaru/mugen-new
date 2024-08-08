@@ -16,12 +16,12 @@ export default function DockMugen() {
         </DockIcon>
 
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Link href="mailto:admin@mugen.ae">
+          <Link href="mailto:support@mugen.ae">
             <Mail size={16} className="text-black dark:text-white" />
           </Link>
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Link href="tel:+971585183003">
+          <Link href="tel:+971588352107">
             <Phone size={16} className="text-black dark:text-white" />
           </Link>
         </DockIcon>

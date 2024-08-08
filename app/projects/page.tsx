@@ -6,6 +6,7 @@ import { projects } from "../lib/data/projects";
 import { ArrowRight, Clock, Factory } from "lucide-react";
 import { Project } from "../lib/types/project";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
+import { useTheme } from "next-themes";
 
 const Page = () => {
   return (
@@ -18,7 +19,7 @@ const Page = () => {
 const ProjectsOverview = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 items-center pb-4 relative transition-all duration-500 ease-in-out">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 items-center pb-4 relative transition-all duration-500 ease-in-out">
         {projects.map((project, index) => (
           <OverviewProjectCard
             key={project.title}
@@ -38,6 +39,7 @@ const OverviewProjectCard = ({
   project: Project;
   index: number;
 }) => {
+  const { theme } = useTheme();
   const [isClicked, setIsClicked] = useState(false);
   const [shouldAppear, setShouldAppear] = useState(false);
   const router = useRouter();
@@ -48,13 +50,14 @@ const OverviewProjectCard = ({
   return (
     <>
       <CardSpotlight
-        className="h-[500px] min-w-full md:min-w-[300px] bg-neutral-800 flex flex-col lg:mb-0 relative p-7 cursor-pointer "
+        className="h-[500px] min-w-full md:min-w-[300px] bg-white dark:bg-black flex flex-col lg:mb-0 relative p-7 cursor-pointer "
         onClick={handleCardClick}
+        color={theme === "dark" ? "#262626" : "#fff"}
       >
-        <div className="relative z-10 h-full text-white">
+        <div className="relative z-10 h-full text-black dark:text-white">
           <div>
             <project.icon size={40} />
-            <h1 className="text-white text-5xl my-4 font-semibold flex flex-col items-start justify-start">
+            <h1 className="text-5xl my-4 font-semibold flex flex-col items-start justify-start">
               {project.title}
             </h1>
             <p className="text-mugen-purple-dark mb-4">{project.overview}</p>
@@ -76,7 +79,7 @@ const OverviewProjectCard = ({
             </div>
           </div>
         </div>
-        <div className="relative text-white z-10 flex items-center justify-end text-5xl">
+        <div className="relative z-10 flex items-center justify-end text-5xl">
           <ArrowRight />
         </div>
       </CardSpotlight>

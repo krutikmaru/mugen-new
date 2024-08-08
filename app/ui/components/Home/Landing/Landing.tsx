@@ -32,9 +32,7 @@ function Landing() {
       </div>
       <div className="w-full h-full bg-blue-00">
         <div className="relative flex min-h-[70vh] md:min-h-screen w-full items-center justify-center overflow-hidden ">
-          {/* <Globe className="top-1/2 -translate-y-1/2 w-[400px] lg:w-[500px]" /> */}
           <GlobeDemo />
-          {/* <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" /> */}
         </div>
       </div>
     </main>

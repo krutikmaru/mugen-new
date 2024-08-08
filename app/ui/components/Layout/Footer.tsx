@@ -49,13 +49,13 @@ function Footer() {
               Contact
             </h4>
             <Link
-              href="mailto:admin@mugen.ae"
+              href="mailto:support@mugen.ae"
               className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
             >
               Mail
             </Link>
             <Link
-              href="tel:1234567899"
+              href="tel:+971588352107"
               className="text-neutral-600 text-lg hover:text-black dark:hover:text-white"
             >
               Phone

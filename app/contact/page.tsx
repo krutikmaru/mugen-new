@@ -19,12 +19,12 @@ function Page() {
         <div>
           <h2 className="text-white text-xl font-medium">Chat with us</h2>
           <p>Our friendly team is here to help.</p>
-          <Link href="mailto:contact@mugen.ae">contact@mugen.ae</Link>
+          <Link href="mailto:support@mugen.ae">support@mugen.ae</Link>
         </div>
         <div>
           <h2 className="text-white text-xl font-medium">Call Us</h2>
           <p>Mon-Fri from 8am to 5pm.</p>
-          <Link href="tel:+971 58 518 3003">+971 58 518 3003</Link>
+          <Link href="tel:+971588352107">+971 58 835 2107</Link>
         </div>
         <div>
           <h2 className="text-white text-xl font-medium">Social Media</h2>
@@ -45,42 +45,18 @@ function Page() {
         {/* First & Last Name */}
         <div className="flex flex-col space-x-0 space-y-4 justify-between items-center sm:flex-row sm:space-x-2 sm:space-y-0">
           <div className="grid w-full items-center gap-1.5">
-            <Label htmlFor="first-name" className="text-neutral-600">
-              First Name
+            <Label htmlFor="name" className="text-neutral-600">
+              Name
             </Label>
             <Input
               type="text"
-              id="first-name"
-              placeholder="First Name"
-              className="border-neutral-400 text-black dark:text-white"
-            />
-          </div>
-          <div className="grid w-full items-center gap-1.5">
-            <Label htmlFor="last-name" className="text-neutral-600">
-              Last Name
-            </Label>
-            <Input
-              type="text"
-              id="last-name"
-              placeholder="Last Name"
+              id="name"
+              placeholder="Name"
               className="border-neutral-400 text-black dark:text-white"
             />
           </div>
         </div>
-        {/* Company Name */}
-        <div className="flex justify-between w-full items-center space-x-2">
-          <div className="grid w-full items-center gap-1.5">
-            <Label htmlFor="company" className="text-neutral-600">
-              Company Name
-            </Label>
-            <Input
-              type="text"
-              id="company"
-              placeholder="Company"
-              className="border-neutral-400 text-black dark:text-white"
-            />
-          </div>
-        </div>
+
         {/* Email */}
         <div className="flex justify-between w-full items-center space-x-2">
           <div className="grid w-full items-center gap-1.5">
