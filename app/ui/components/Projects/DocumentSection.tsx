@@ -31,7 +31,11 @@ export function DocumentSection({
     className: string | undefined;
     children: React.ReactNode;
   }) => {
-    return <p className={className}>{children}</p>;
+    return (
+      <p className={`${className} text-neutral-800 dark:text-neutral-400`}>
+        {children}
+      </p>
+    );
   };
   const Li = ({
     className,
@@ -40,7 +44,11 @@ export function DocumentSection({
     className: string | undefined;
     children: React.ReactNode;
   }) => {
-    return <li className={className}>{children}</li>;
+    return (
+      <li className={`${className} text-neutral-800 dark:text-neutral-400`}>
+        {children}
+      </li>
+    );
   };
   for (let i = 0; i < projectContent.length; i++) {
     let element = projectContent[i];

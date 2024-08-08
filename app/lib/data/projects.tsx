@@ -15,7 +15,7 @@ export const projects: Project[] = [
   {
     id: "business-center-operations",
     title: "Business Center Operations",
-    icon: BriefcaseBusiness,
+    icon: <BriefcaseBusiness size={40} />,
     industry: "Business Services",
     duration: "2 months",
     overview:
@@ -23,11 +23,11 @@ export const projects: Project[] = [
     name: "Manufacturing Focussed ERP for Engineering Company",
     sector: ["Engineering", "Manufacturing"],
     integrations: [
-      { title: "CRM", icon: Server },
-      { title: "Accounts", icon: File },
-      { title: "Inventory", icon: Warehouse },
-      { title: "Task Management", icon: ListCheck },
-      { title: "Payroll Systems", icon: Wallet },
+      { title: "CRM", icon: <Server size={40} /> },
+      { title: "Accounts", icon: <File size={40} /> },
+      { title: "Inventory", icon: <Warehouse size={40} /> },
+      { title: "Task Management", icon: <ListCheck size={40} /> },
+      { title: "Payroll Systems", icon: <Wallet size={40} /> },
     ],
     difficulty: {
       title: "mid",
@@ -44,7 +44,7 @@ export const projects: Project[] = [
         type: "p",
         data: `Inefficient management of business units, access cards, and parking spaces using Excel. Lack of a Human Resource Management System (HRMS) causing difficulties in salary processing and leave management. Need for an effective lead management system to enhance sales team performance and client engagement.
 `,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h1",
@@ -60,18 +60,18 @@ export const projects: Project[] = [
         type: "li",
         data: `Problem: The business center was facing significant challenges in managing the allocation of business units, access cards, and parking spaces using Excel. This led to inefficiencies and errors in day-to-day operations.
 `,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Solution: We implemented a comprehensive software solution designed to streamline these processes. The new system allowed for efficient allocation and management, reducing errors and saving time.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Outcome: The business center experienced improved organization and efficiency in managing their business units, access cards, and parking spaces.
 `,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h2",
@@ -81,17 +81,17 @@ export const projects: Project[] = [
       {
         type: "li",
         data: `Problem: The absence of an HRMS system meant that the accounts team had to handle salary processing and leave management manually, leading to potential errors and inefficiencies.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Solution: We provided and maintained an HRMS system tailored to the business center's needs. This system automated salary processing, leave management, and other HR-related tasks.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Outcome: The new HRMS system enhanced the accuracy and efficiency of HR operations, freeing up the accounts team to focus on other critical tasks.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h2",
@@ -101,17 +101,17 @@ export const projects: Project[] = [
       {
         type: "li",
         data: `Implementation: The sales team at the business center successfully implemented a lead management system to improve their lead handling and client engagement processes.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Outcome: The lead management system enabled the sales team to better track and manage leads, resulting in improved client engagement and increased sales efficiency.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Conclusion: The implementation of these solutions transformed the operational efficiency of XYZ Business Center. By addressing their key challenges with tailored software solutions, we helped them achieve a more organized, efficient, and productive work environment.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h2",
@@ -121,14 +121,14 @@ export const projects: Project[] = [
       {
         type: "p",
         data: `"The new systems have significantly improved our operational efficiency. The software for managing business units and access cards, the HRMS system, and the lead management system have all contributed to a smoother and more efficient workflow. We are extremely satisfied with the results." - Sreeji, UWBC`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
     ],
   },
   {
     id: "optimizing-educational-operations",
     title: "Optimizing Educational Operations",
-    icon: School,
+    icon: <School size={40} />,
     industry: "Education",
     duration: "2 months",
     overview:
@@ -136,11 +136,11 @@ export const projects: Project[] = [
     name: "Manufacturing Focussed ERP for Engineering Company",
     sector: ["Education", "Retail", "Manufacturing"],
     integrations: [
-      { title: "CRM", icon: Server },
-      { title: "Accounts", icon: File },
-      { title: "Inventory", icon: Warehouse },
-      { title: "Task Management", icon: ListCheck },
-      { title: "Payroll Systems", icon: Wallet },
+      { title: "CRM", icon: <Server size={40} /> },
+      { title: "Accounts", icon: <File size={40} /> },
+      { title: "Inventory", icon: <Warehouse size={40} /> },
+      { title: "Task Management", icon: <ListCheck size={40} /> },
+      { title: "Payroll Systems", icon: <Wallet size={40} /> },
     ],
     difficulty: {
       title: "High",
@@ -238,7 +238,7 @@ export const projects: Project[] = [
   {
     id: "shipchandler-quotation-management",
     title: "Shipchandler Quotation Management",
-    icon: Ship,
+    icon: <Ship size={40} />,
     industry: "Marine Supplies",
     duration: "1 month",
     overview:
@@ -246,11 +246,11 @@ export const projects: Project[] = [
     name: "Manufacturing Focussed ERP for Engineering Company",
     sector: ["Education", "Retail", "Manufacturing"],
     integrations: [
-      { title: "CRM", icon: Server },
-      { title: "Accounts", icon: File },
-      { title: "Inventory", icon: Warehouse },
-      { title: "Task Management", icon: ListCheck },
-      { title: "Payroll Systems", icon: Wallet },
+      { title: "CRM", icon: <Server size={40} /> },
+      { title: "Accounts", icon: <File size={40} /> },
+      { title: "Inventory", icon: <Warehouse size={40} /> },
+      { title: "Task Management", icon: <ListCheck size={40} /> },
+      { title: "Payroll Systems", icon: <Wallet size={40} /> },
     ],
     difficulty: {
       title: "Low",
@@ -266,7 +266,7 @@ export const projects: Project[] = [
       {
         type: "p",
         data: `Difficulty in obtaining quotations from multiple suppliers. Inefficient process for awarding quotations based on supplier prices. Need for customized solutions to meet specific business requirements.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h1",
@@ -281,12 +281,12 @@ export const projects: Project[] = [
       {
         type: "li",
         data: `Implemented a system to streamline the process of obtaining quotations from various suppliers.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Enabled the company to receive and compare supplier prices efficiently.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h2",
@@ -296,12 +296,12 @@ export const projects: Project[] = [
       {
         type: "li",
         data: `Developed a solution to automate the awarding of quotations based on supplier prices.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Ensured a transparent and efficient selection process for suppliers.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h2",
@@ -311,12 +311,12 @@ export const projects: Project[] = [
       {
         type: "li",
         data: `Tailored the system to meet the specific needs of ShipChandler.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Included features to manage and finalize quotations based on orders.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h2",
@@ -326,14 +326,14 @@ export const projects: Project[] = [
       {
         type: "p",
         data: `The customized software solution significantly improved the company's ability to manage supplier quotations. By automating and optimizing the process of obtaining, comparing, and awarding quotations, the company experienced enhanced efficiency and accuracy in its operations. The tailored features ensured that the system aligned perfectly with their specific business needs, leading to better decision-making and streamlined workflow.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
     ],
   },
   {
     id: "optimizing-wholesale-distribution",
     title: "Optimizing Wholesale Distribution",
-    icon: Box,
+    icon: <Box size={40} />,
     industry: "Wholesale Distribution",
     duration: "3 month",
     overview:
@@ -341,11 +341,11 @@ export const projects: Project[] = [
     name: "Manufacturing Focussed ERP for Engineering Company",
     sector: ["Retail", "Manufacturing"],
     integrations: [
-      { title: "CRM", icon: Server },
-      { title: "Accounts", icon: File },
-      { title: "Inventory", icon: Warehouse },
-      { title: "Task Management", icon: ListCheck },
-      { title: "Payroll Systems", icon: Wallet },
+      { title: "CRM", icon: <Server size={40} /> },
+      { title: "Accounts", icon: <File size={40} /> },
+      { title: "Inventory", icon: <Warehouse size={40} /> },
+      { title: "Task Management", icon: <ListCheck size={40} /> },
+      { title: "Payroll Systems", icon: <Wallet size={40} /> },
     ],
     difficulty: {
       title: "High",
@@ -361,7 +361,7 @@ export const projects: Project[] = [
       {
         type: "p",
         data: `The client is a fast-growing, trusted distributor of general food and non-food items, specializing in bulk grocery trading, with a strong footprint across the entire Middle East.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h1",
@@ -371,7 +371,7 @@ export const projects: Project[] = [
       {
         type: "p",
         data: `Managing operations for multiple child companies. Difficulty in synchronizing tasks and to-do lists across different companies. Need for a centralized and personalized dashboard to streamline operations based on roles and responsibilities.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h1",
@@ -386,12 +386,12 @@ export const projects: Project[] = [
       {
         type: "li",
         data: `Created a personalized dashboard to manage different child companies.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Centralized the to-do lists for various companies, synchronized according to the employees’ roles and responsibilities.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h2",
@@ -401,12 +401,12 @@ export const projects: Project[] = [
       {
         type: "li",
         data: `Implemented a system tailored to the client's specific needs.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "li",
         data: `Enabled seamless integration and synchronization of tasks across multiple entities within the company.`,
-        tailwindCss: "mb-5 text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "mb-5 text-neutral-600 dark:text-neutral-200",
       },
       {
         type: "h2",
@@ -416,7 +416,7 @@ export const projects: Project[] = [
       {
         type: "p",
         data: `The implementation of a custom dashboard and tailored system significantly enhanced the client's operational efficiency. By centralizing and synchronizing tasks and to-do lists, the company achieved better coordination and productivity across its various child companies. The personalized approach ensured that each employee had a clear understanding of their roles and responsibilities, leading to improved workflow and overall performance.`,
-        tailwindCss: "text-neutral-600 dark:text-[#a1a1a1]",
+        tailwindCss: "text-neutral-600 dark:text-neutral-200",
       },
     ],
   },

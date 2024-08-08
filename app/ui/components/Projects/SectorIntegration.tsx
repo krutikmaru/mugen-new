@@ -24,14 +24,14 @@ export default function SectorIntegrations({ project }: { project: Project }) {
         <h1 className="ml-2 mb-3 mt-6 text-xl text-black dark:text-white">
           Integrations
         </h1>
-        <div className="w-full flex justify-start items-center overflow-x-scroll scrollbar-hidden pb-4">
+        <div className="w-full  grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center pb-4">
           {project.integrations.map((integration) => {
             return (
               <div
                 key={integration.title}
-                className="h-32 min-w-[128px] mr-5 p-5 bg-neutral-100 dark:bg-neutral-900 rounded-md overflow-hidden flex flex-col justify-center items-center text-center"
+                className="h-32 w-full p-5 bg-neutral-100 dark:bg-neutral-900 rounded-md overflow-hidden flex flex-col justify-center items-center text-center"
               >
-                <integration.icon className="text-black dark:text-white" />
+                {integration.icon}
                 <span className="text-black dark:text-white text-sm">
                   {integration.title}
                 </span>

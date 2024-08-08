@@ -27,7 +27,7 @@ export default function ContentArea({ service }: { service: Service }) {
           className="h-auto lg:min-h-[400px]  mt-10 mb-0 lg:mb-4 lg:mt-0 flex flex-col justify-start items-start space-y-4"
         >
           <div className="flex flex-col justify-start items-start space-y-4">
-            <span className="text-xs font-medium text-black dark:text-white">
+            <span className="text-base font-medium text-black dark:text-white">
               {service.title}
             </span>
             <h1 className="text-7xl font-bold text-black dark:text-white tracking-tighter">
@@ -66,7 +66,7 @@ function ControlBar({
         className="flex items-center justify-between space-x-2 text-neutral-600 dark:text-[#B7B7B7]"
         onClick={nextSlide}
       >
-        <span className="text-2xl font-medium tracking-tighter">
+        <span className="text-base font-medium tracking-tighter">
           {slides[(currentSlideIndex + 1) % slides.length].title}
         </span>
         <ArrowRight />

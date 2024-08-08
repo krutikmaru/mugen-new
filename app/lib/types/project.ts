@@ -1,8 +1,6 @@
-import { LucideIcon } from "lucide-react";
-
 export type Integration = {
   title: string;
-  icon: LucideIcon;
+  icon: React.ReactNode;
 };
 
 export type Difficulty = {
@@ -19,7 +17,7 @@ export type Content = {
 export type Project = {
   id: string;
   title: string;
-  icon: LucideIcon;
+  icon: React.ReactNode;
   industry: string;
   duration: string;
   overview: string;
